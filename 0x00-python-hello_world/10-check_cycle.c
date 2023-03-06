@@ -8,5 +8,16 @@
 */
 int check_cycle(listint_t *list)
 {
-
+listint_t *slow = list;
+listint_t *swift = list;
+if(!list)
+return (0);
+while(swift && swift->next)
+{
+slow = slow->next;
+swift = swift->next->next;
+if(swift == slow)
+return (1);
+}
+return (0);
 }
