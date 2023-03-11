@@ -1,4 +1,6 @@
 #!/usr/bin/python3
 def print_list_integer(my_list=[]):
-    for i in my_list:
-        print("{}".format(i))
+    i = len(my_list)
+    while i > 0:
+        print("{}".format(my_list[i-1]))
+        i--
