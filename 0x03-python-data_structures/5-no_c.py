@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 def no_c(my_string):
-   while my_string.find("c") != -1:
-      my_string.pop([my_string.find("c")])
-   while my_string.find("C") != -1:
-      my_string.pop([my_string.find("C")])
-   return my_list
+   new_string = ""
+   for i in my_string:
+      if i is not 'C' or i is not 'c':
+         new_string += i
+   return new_string
