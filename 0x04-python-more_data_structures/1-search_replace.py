@@ -5,4 +5,6 @@ def search_replace(my_list, search, replace):
        if j == search:
            my_list.pop([i])
            my_list.insert(i, replace)
-       i += 1
+           i += 1
+       else:
+           i += 1
