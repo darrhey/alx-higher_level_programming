@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""Square generation module for 0x06
+"""
 class Square:
+    """class defined for square generation
+"""
     def __init__(self, size=0):
         self.__size = size
         if type(size) != int:
