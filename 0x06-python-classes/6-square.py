@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Square generation module for 0x06
+"""
 class Square:
     def __init__(self, size=0, position=(0, 0)):
         self.__size = size
